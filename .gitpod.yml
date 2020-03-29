@@ -1,3 +1,12 @@
 tasks:
   - init: npm install && npm run build
     command: npm run start
+
+vscode:
+  extensions:
+    - dsznajder.es7-react-js-snippets@2.7.1:ot1GSdt45abTrr2DCAM42g==
+    - PKief.material-icon-theme@4.0.1:uW65d0I1ibFxFDWPtc2zkQ==
+    - esbenp.prettier-vscode@3.20.0:37/f4uBlE287wUjENFq1aA==
+    - dzannotti.vscode-babel-coloring@0.0.4:5Rlj2/kADFIl+crtoyiywQ==
+    - CoenraadS.bracket-pair-colorizer@1.0.61:fqPT1sJEqaEdrfXeYbdW+A==
+    - oderwat.indent-rainbow@7.4.0:nth8lnJRnQu9NcWvNc9KPA==

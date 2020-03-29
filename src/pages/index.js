@@ -5,12 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import About from "../components/Sections/About"
-import Team from "../components/Sections/Team"
 import Tournaments from "../components/Sections/Tournaments"
+import Team from "../components/Sections/Team"
 import FAQ from "../components/Sections/FAQ"
 import Contact from "../components/Sections/Contact"
 
-import { Box, Button, Heading, Text, useColorMode, Stack } from "@chakra-ui/core"
+import {
+  Box,
+  Button,
+  Heading,
+  Text,
+  useColorMode,
+  Stack,
+} from "@chakra-ui/core"
 
 const IndexPage = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -20,23 +27,23 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
- {/*   <Box bg={bgColor[colorMode]} color color={color[colorMode]}>*/}
-        <About />
-        <Team />
-        <FAQ />
-        <Contact />
-        <Tournaments />
-        <Heading size="md" mb={5}>
-          Hello World
-        </Heading>
-        <Text mb={3}>Color mode: {colorMode}</Text>
-        <Button vairantColor="teal" onClick={toggleColorMode}>
-          Toggle color mode
-        </Button>
+      {/*   <Box bg={bgColor[colorMode]} color color={color[colorMode]}>*/}
+      <About />
+      <Tournaments />
+      <Team />
+      <FAQ />
+      <Contact />
+      <Heading size="md" mb={5}>
+        Hello World
+      </Heading>
+      <Text mb={3}>Color mode: {colorMode}</Text>
+      <Button vairantColor="teal" onClick={toggleColorMode}>
+        Toggle color mode
+      </Button>
 
-        <Text mt={3}>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-        </Text>
+      <Text mt={3}>
+        <Link to="/privacy-policy">Privacy Policy</Link>
+      </Text>
       <Button onClick={toggleColorMode}>
         Toggle {colorMode === "light" ? "Dark" : "Light"}
       </Button>

@@ -1,7 +1,7 @@
 import React from "react"
 
 import {
-Box,
+  Box,
   Accordion,
   AccordionItem,
   AccordionHeader,
@@ -14,7 +14,7 @@ import { Title, Section, MinContainer } from "../../utils"
 const FAQ = () => {
   return (
     <Section>
-      <Title gap="13px" mb="10%">
+      <Title gap="13px" mb="5%">
         FAQ
       </Title>
       <MinContainer>
@@ -34,7 +34,7 @@ const FAQ = () => {
             </AccordionPanel>
           </AccordionItem>
 
- <AccordionItem>
+          <AccordionItem>
             <AccordionHeader>
               <Box flex="1" textAlign="left">
                 Section 1 title
@@ -49,7 +49,7 @@ const FAQ = () => {
             </AccordionPanel>
           </AccordionItem>
 
- <AccordionItem>
+          <AccordionItem>
             <AccordionHeader>
               <Box flex="1" textAlign="left">
                 Section 1 title

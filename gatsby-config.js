@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    //`gatsby-plugin-chakra-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,6 +26,40 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Asap`,
+            variants: [`500`, `400`, `700`],
+          },
+          {
+            family: `Roboto Slab`,
+            variants: [`500`, `400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`, `400i`, `700i`],
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-chakra-ui",
+      options: {
+        /**
+         * @property {boolean} [isResettingCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        isResettingCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

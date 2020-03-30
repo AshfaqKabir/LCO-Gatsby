@@ -10,3 +10,5 @@ vscode:
     - dzannotti.vscode-babel-coloring@0.0.4:5Rlj2/kADFIl+crtoyiywQ==
     - CoenraadS.bracket-pair-colorizer@1.0.61:fqPT1sJEqaEdrfXeYbdW+A==
     - oderwat.indent-rainbow@7.4.0:nth8lnJRnQu9NcWvNc9KPA==
+    - jpoissonnier.vscode-styled-components@0.0.29:06Mo1MxbFX3IJQGCnvR7SA==
+    - Prisma.vscode-graphql@0.2.14:hofLTU1qSsbqFT6C8sxyiQ==

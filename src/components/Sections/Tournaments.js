@@ -7,7 +7,7 @@ import { Title, Section, MinContainer } from "../../utils"
 const Tournaments = () => {
   return (
     <Section>
-      {/** <Title>Tournaments</Title>*/}
+      <Title mb="70px">Tournaments</Title>
       <Title
         fontFam="Roboto"
         fSize="50px"

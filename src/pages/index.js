@@ -20,9 +20,9 @@ import {
 } from "@chakra-ui/core"
 
 const IndexPage = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
-  const bgColor = { light: "red.500", dark: "red.200" }
-  const color = { light: "white", dark: "gray.800" }
+//   const { colorMode, toggleColorMode } = useColorMode()
+//   const bgColor = { light: "red.500", dark: "red.200" }
+//   const color = { light: "white", dark: "gray.800" }
 
   return (
     <Layout>
@@ -33,14 +33,11 @@ const IndexPage = () => {
       <Team />
       <FAQ />
       <Contact />
-      <Heading size="md" mb={5}>
-        Hello World
-      </Heading>
+      {/**
       <Text mb={3}>Color mode: {colorMode}</Text>
       <Button vairantColor="teal" onClick={toggleColorMode}>
         Toggle color mode
       </Button>
-
       <Text mt={3}>
         <Link to="/privacy-policy">Privacy Policy</Link>
       </Text>
@@ -55,6 +52,7 @@ const IndexPage = () => {
           Toggle Mode
         </Button>
       </Box>
+       */}
       <Link to="/page-2/">Go to page 2</Link>
     </Layout>
   )

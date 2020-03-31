@@ -59,7 +59,12 @@ const Layout = ({ children }) => {
           </Box>
         </Box>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Built By Ashfaq</footer>
+        <footer>
+          © {new Date().getFullYear()}, Developed By
+          <a target="_blank" href="https://ashfaqkabir.com">
+            {""} Ashfaq
+          </a>
+        </footer>
       </div>
     </div>
   )

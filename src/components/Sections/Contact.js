@@ -3,8 +3,11 @@ import React from "react"
 
 import {
   Grid,
+  Stack,
   Flex,
   Box,
+  Heading,
+  Text,
   FormErrorMessage,
   FormControl,
   Input,
@@ -48,30 +51,51 @@ const Contact = () => {
       <Title mb="70px">Get In Touch</Title>
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Flex mb={4}>
-            <FormControl isInvalid={errors.name} mr={4}>
-              <Input
-                name="name"
-                placeholder="name"
-                ref={register({ validate: validateName })}
-              />
-              <FormErrorMessage>
-                {errors.name && errors.name.message}
-              </FormErrorMessage>
-            </FormControl>
-            <FormControl isInvalid={errors.email}>
+          {/* <Flex mb={4}> */}
+          <FormControl isInvalid={errors.name} mb={4}>
+            <Input
+              name="name"
+              placeholder="Name"
+              variant="flushed"
+              p={2}
+              ref={register({ validate: validateName })}
+            />
+            <FormErrorMessage>
+              {errors.name && errors.name.message}
+            </FormErrorMessage>
+          </FormControl>
+          {/**     <FormControl isInvalid={errors.email}>
               <Input
                 name="email"
                 type="email"
-                placeholder="email"
+                placeholder="Email"
+                // variant="flushed"
                 ref={register({ validate: validateEmail })}
               />
               <FormErrorMessage>
                 {errors.email && errors.email.message}
               </FormErrorMessage>
-            </FormControl>
-          </Flex>
-          <Textarea placeholder="Here is a sample placeholder" />
+            </FormControl>*/}
+          {/* </Flex> */}
+          <FormControl isInvalid={errors.email} mb={4}>
+            <Input
+              name="email"
+              type="email"
+              placeholder="Email"
+              variant="flushed"
+              p={2}
+              ref={register({ validate: validateEmail })}
+            />
+            <FormErrorMessage>
+              {errors.email && errors.email.message}
+            </FormErrorMessage>
+          </FormControl>
+          <Textarea
+            placeholder="Here is a sample placeholder"
+            p={2}
+            // variant="flushed"
+            minHeight="200px"
+          />
           <Button
             mt={4}
             variantColor="teal"
@@ -81,7 +105,25 @@ const Contact = () => {
             Submit
           </Button>
         </form>
-        <Box w="100%" h="10" bg="blue.500" />
+        <Stack>
+          <Box p={5} shadow="md" borderWidth="1px">
+            <Heading fontSize="xl">Phone:</Heading>
+            <Text p={2}>+888 000000020, +999 111111222, +100 111111234</Text>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px">
+            <Heading fontSize="xl">Address: </Heading>
+            <Text p={2}>
+              LCO Basketball Ground, 55/A Dhanmondi Road-5, Dhaka
+            </Text>
+          </Box>
+          <Box p={5} shadow="md" borderWidth="1px">
+
+            <Heading fontSize="xl" mt={4}>
+              Opening Hours:{" "}
+            </Heading>
+            <Text p={2}>6:00 Am to 9:00 Pm</Text>
+          </Box>
+        </Stack>
       </Grid>
     </Section>
   )
